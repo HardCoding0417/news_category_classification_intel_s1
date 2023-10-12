@@ -13,7 +13,7 @@ print(X_test.shape, Y_test.shape)
 model = Sequential()
 
 # 임베딩레이어 - 자연어 학습시 매우 중요. 의미공간상의 벡터 레이어링을 해준다.
-model.add(Embedding(12458, 300, input_length=21))
+model.add(Embedding(15477, 300, input_length=22))
 # 300 -> 차원 축소. 12000개를 300개의 차원으로 줄인다.
 # 공간이 커질수록 데이터갯수는 그대로. 차원이 늘어날수록 차원 안의 데이터가 희소해진다. 데이터가 부족해서 학습이 안됨->차원의 저주
 # 차원을 줄여줘야한다.
